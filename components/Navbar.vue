@@ -129,10 +129,10 @@
               </a>
             </div>
             <div class="company-images">
-              <img src="C:\Users\anna\Downloads\nagaoka\my-project\public\20240705112017814.jpeg" 
+              <img src="/20240705112017814.jpeg" 
                    alt="Company Facility" 
                    class="company-image">
-              <img src="C:\Users\anna\Downloads\nagaoka\my-project\public\202407051119578313.jpeg" 
+              <img src="/202407051119578313.jpeg" 
                    alt="Company Products" 
                    class="company-image">
             </div>
