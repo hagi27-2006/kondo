@@ -28,9 +28,18 @@
                 {{ visitNotice[language].button }}
               </div>
              
-              <a href="mailto:info@kondo-printing.co.jp" class="contact-button">
-                <span class="icon">✉️</span> info@kondo-printing.co.jp
+              <div class="footer-actions">
+              <a href="https://www.instagram.com/entry.kondo/" target="_blank" class="social-link">
+                <i class="fab fa-instagram"></i> Instagram
               </a>
+              <div class="controls">
+                <button @click="toggleTheme" class="theme-button" :class="{ 'active': theme === 'dark' }">
+                  <span class="theme-icon">{{ theme === 'light' ? '🌞' : '🌙' }}</span>
+                  <span class="theme-text">{{ theme === 'light' ? 'Light Mode' : 'Dark Mode' }}</span>
+                  <span class="active-indicator">(ON)</span>
+                </button>
+              </div>
+            </div>
             </div>
           </div>
         </div>
@@ -160,16 +169,7 @@
             </div>
             <p class="copyright">Copyright©コンドウ印刷株式会社 All Rights Reserved.</p>
             <div class="footer-actions">
-              <a href="https://www.instagram.com/entry.kondo/" target="_blank" class="social-link">
-                <i class="fab fa-instagram"></i> Instagram
-              </a>
-              <div class="controls">
-                <button @click="toggleTheme" class="theme-button" :class="{ 'active': theme === 'dark' }">
-                  <span class="theme-icon">{{ theme === 'light' ? '🌞' : '🌙' }}</span>
-                  <span class="theme-text">{{ theme === 'light' ? 'Light Mode' : 'Dark Mode' }}</span>
-                  <span class="active-indicator">(ON)</span>
-                </button>
-              </div>
+              
             </div>
           </div>
         </div>
