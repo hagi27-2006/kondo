@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   modules: [
-    
+    '@nuxtjs/sitemap'
   ],
 
   css: [
@@ -28,5 +28,11 @@ export default defineNuxtConfig({
     }
   },
 
-  compatibilityDate: '2025-03-06'
+  compatibilityDate: '2025-03-06',
+
+  runtimeConfig: {
+    public: {
+      siteUrl: 'https://kondo-printing.vercel.app'
+    }
+  }
 })
