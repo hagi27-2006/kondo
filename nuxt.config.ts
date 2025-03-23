@@ -36,31 +36,10 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      routes: ['/', '/company-info', '/visit']
-    }
-  },
-
-  sitemap: {
-    xsl: true,
-    strictNuxtContentPaths: true,
-    autoLastmod: true,
-    urls: () => {
-      return [
-        {
-          url: '/',
-          changefreq: 'daily',
-          priority: 1
-        },
-        {
-          url: '/company-info',
-          changefreq: 'monthly',
-          priority: 0.8
-        },
-        {
-          url: '/visit',
-          changefreq: 'monthly',
-          priority: 0.8
-        }
+      crawlLinks: true,
+      routes: [
+        '/',
+        '/sitemap.xml'
       ]
     }
   }
