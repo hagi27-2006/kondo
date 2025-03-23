@@ -30,9 +30,7 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2025-03-06',
 
-  runtimeConfig: {
-    public: {
-      siteUrl: 'https://kondo-printing.vercel.app'
-    }
+  site: {
+    url: 'https://kondo-printing.vercel.app'
   }
 })
