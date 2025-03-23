@@ -2,10 +2,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  modules: [
-    '@nuxtjs/sitemap'
-  ],
-
   css: [
     '@fortawesome/fontawesome-free/css/all.css',
   ],
@@ -36,9 +32,7 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      routes: ['/', '/company-info', '/visit', '/sitemap.xml'],
-      crawlLinks: false,
-      ignore: []
+      routes: ['/', '/company-info', '/visit', '/sitemap.xml']
     }
   }
 })
